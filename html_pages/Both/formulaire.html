@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Make a request for asking me to ake something for you">
+  	    <meta name="keywords" content="form, projects, request, requête, formulaire, projets">
+  	    <meta name="author" content="Whixon">
+	    <title id="title">Make a Request Form</title>
+        <link rel="icon" href="../images/logo.png">
+	    <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+	
+        <header id="header">
+
+            <table class="logoAndTitle">
+                <th class="spaced-cell">
+                    <th>
+                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
+                    </th>
+                    <th>
+                        <h2 class="begin">
+                            My Currents And Future Projects
+                        </h2>
+                    </th>
+                </th>
+            
+                <th class="spaced-cell">
+                    <th class="menu"><a href="../Eng/index.html">Home Page</a></th>
+                    <th class="menu"><a href="../Eng/myProjects.html">My Projects</a></th>
+		            <th class="menu"><a href="../funFact.html">funFact</a></th>
+                    <th class="menu"><a href="../Both/formulaire.html">Make a Request</a></th>
+		        </th>
+            </table>
+
+            <script>
+                let lastScrollY = window.scrollY; // Dernière position de scroll
+
+                window.addEventListener('scroll', () => {
+                    const header = document.getElementById('header');
+
+                    if (window.scrollY > 60) {
+                        // L'utilisateur défile vers le bas
+                        header.style.transform = 'translateY(-100%)'; // Cache le header
+                    } else {
+                        // L'utilisateur défile vers le haut
+                        header.style.transform = 'translateY(0)'; // Affiche le header
+                    }
+
+                    lastScrollY = window.scrollY; // Met à jour la position
+                });
+            </script>
+            
+        </header>
+
+
+        <article>
+
+            <section class="bienform">
+                <br><br><br>
+                <h1 class="bienform">From<br>Formulaire</h1>
+            </section>
+
+            <section class="explanation_form">
+                <table>
+                    <th>
+                        <h1 class="explanation_form">Explanation / Explication</h1>
+                        <h3 class="explanation_form">Eng:</h3>
+                        <p class="explanation_form">
+                            Okay first, thank you to visit my WebSite ^^
+                        <br>To explain, this form is to request some project that I can make for you!
+                        <br>
+                        <br>For exemple:
+                        <br>you've some difficulties to do some task on your computer,
+                        <br>you need an application who order some Informations in a folder,
+                        <br>or you need an application to plannify something easily.
+                        <br>
+                        <br>I'm here for you ! My job is to make some tools to make your life better and  smoother !
+                        <br>
+                        <br>(I'll delete every bad request, at my own judgment)
+                        <br>
+                        <br>Thanks for understanding
+                        </p>
+                        <br>
+                        <h3 class="explanation_form">Fr:</h3>
+                        <p class="explanation_form">
+                            Okay premièrement, merci de visiter mon Site Web  ^^
+                        <br>Pour expliquer, ce formulaire sert à demander des projets que je peux faire pour vous !
+                        <br>
+                        <br>Par exemple:
+                        <br>tu as quelques difficultés à faire certaines tâches sur ton ordi,
+                        <br>tu as besoin d'aide pour trier certaines informations dans un dossier ?
+                        <br>ou tu as besoin d'une application pour plannifier quelque chose facilement ?
+                        <br>
+                        <br>Je suis la personne qu'il te faut ! 
+                        <br>Mon job est de rendre ta vie plus facile !
+                        <br>
+                        <br>(Je me donne l'autorisation de supprimer toutes les requêtes qui me semblent inappropriées, à mon propre jugement)
+                        <br>
+                        <br>Merci de votre compréhension !
+                        </p>
+                    </th>
+                    <th>
+                        <img class="explanation_form" src="../images/explanation.jpg" alt="explanation image">
+                    </th>
+                </table>
+            </section>
+
+            <section class="formulaire">
+                <form class="popupform" action="/save" method="post">
+                    <h1 class="form">Faire une demande <br> Make a Request</h1>
+                    <br>
+                    <label class="form" for="title">Title of the project / Titre du projet</label>
+                    <br>
+                    <input class="form" type="text" name="title" id="title" required>
+                    <br>
+                    <br>
+                    <label class="form" for="description">Explanation / explication</label>
+                    <br>
+                    <textarea class="form" name="description" id="description" required></textarea>
+                    <br>
+                    <br>
+                    <label class="form" for="email">Email</label>
+                    <br>
+                    <input class="form" type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <br><br>
+                    <label class="form" for="language">Language of Communication <br> Language de communication</label>
+                    <br>
+                    <select class="form" type="text" name="language" id="language" required>
+                        <option value="English">English / Anglais</option>
+                        <option value="French">French / Français</option>
+                    </select>
+                    
+                    <br><br>
+                    <button class="submit" type="submit">Submit / Soumettre</button>
+                </form>    
+            </section>
+        </article>
+
+
+        <footer>
+            <h2>
+                Contacte Me / Me Contacter:
+            </h2>
+            <table>
+                <th>
+                    <a class="link" href="https://www.instagram.com/_whixon_/">Instagram</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.youtube.com/@whixon_">Youtube</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
+                </th>
+            </table>
+	    <p>cyril.houppertz@gmail.com</p>
+        </footer>
+    </body>
+</html>

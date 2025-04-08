@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+	<meta name="google-site-verification" content="LfI3CPRwfdSPFdF4QRiVzpDWupezBKpOSC_UsLD0-VE" />
+        <meta name="description" content="Presentation de mon SiteWeb">
+  	<meta name="keywords" content="programmation, apprendre, python, projets">
+  	<meta name="author" content="Whixon">
+	<link rel="icon" href="../images/logo.png">
+	<link rel="stylesheet" href="../style/style.css">
+        <title>Page D'acceuil</title>
+    </head>
+    <body>
+        <header id="header">
+            
+            <table class="logoAndTitle">
+                <th>
+                    <th>
+                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
+                    </th>
+                    <th>
+                        <h2 class="begin">
+                            Mes Projets Actuels et Futurs
+                        </h2>
+                    </th>
+                </th>
+                
+                <th class="spaced-cell">
+                    <th  class="menu"><a href="./index-fr.html">Page d'acceuil</a></th>
+                    <th class="menu"><a href="./myProjects-fr.html">Mes Projets</a></th>
+                    <th class="menu"><a href="../funFact.html">Anecdotes</a></th>
+                    <th class="menu"><a href="../Both/formulaire.html">Faire une Demande</a></th>
+                    <th>
+                        <div class="language-dropdown">
+                            <div class="dropdown-button">Langue</div>
+                            <div class="dropdown-content">
+                                <a href="../Eng/index.html">Anglais</a>
+                                <a href="./index-fr.html">Français</a>
+                            </div>
+                        </div>
+                    </th>
+                </th>
+            </table>    
+
+            <script>
+                let lastScrollY = window.scrollY; // Dernière position de scroll
+
+                window.addEventListener('scroll', () => {
+                    const header = document.getElementById('header');
+
+                    if (window.scrollY > 60) {
+                        // L'utilisateur défile vers le bas
+                        header.style.transform = 'translateY(-100%)'; // Cache le header
+                    } else {
+                        // L'utilisateur défile vers le haut
+                        header.style.transform = 'translateY(0)'; // Affiche le header
+                    }
+
+                    lastScrollY = window.scrollY; // Met à jour la position
+                });
+            </script>
+            
+        </header>
+        
+        <article>
+
+            <section class="bienvenue">
+                <h1 class="bienvenue">Bienvenue</h1>
+                <h4 class="bienvenue">Bonjour et bienvenue sur mon site,                     
+                <br> Je suis ravi de pouvoir enfin rassembler tous mes projets et les présenter au même endroit.
+                <br>
+                <br> Ce site web fait partie des nombreux projets que j'ai réalisés.<h4>
+            </section>
+
+            <section class="presentation">
+                <table>
+                    <th>
+                        <img class="presentation" src="../images/moi.jpg" alt="sdqs">
+                    </th>
+                    <th>
+                        <h1 class="presentation">Presentation</h1>
+                        <p class="presentation">Salut, moi c'est Whixon !
+                            <br> j'étudie les TI (Thechnologies de l'Informatique) à la haute école "Léonard de Vinci".
+                            <br> J'apprends quelques langages de programmation : Python, Java, JavaScript, TypeScript, HTML et CSS. </p>
+                            <br>
+                        <p class="presentation"> 
+                            J'ai commencé à apprendre la programmation avec Scratch (langage Blocky),
+                            <br>c'est un langage de programmation où l'on programme comme on résout un puzzle. Blocky est le langage le plus utilisé pour apprendre la logique de programmation et les bases de la syntaxe : if ; else ; etc.
+                            <br>
+                            <br>J'ai ensuite appris Python par moi-même et j'apprécie ce langage, car il n'est pas très difficile.
+                            <br>C'est d'ailleurs avec python que j'ai fait mes premiers projets !
+                            <br>
+                            <br>Passionné par la programmation et la création d’outils numériques, j’ai décidé de lancer ce blog pour partager mes projets, expliquer mes démarches et, surtout, rendre le monde du code accessible à tous.
+                        </p>
+                    </th>
+                </table>
+            </section>
+
+	        <section class="why">
+                <table>
+                    <th>
+                        <h1 class="why">Pourquoi ce blog ?</h1>
+                        <p class="why">
+                            J’adore développer des applications, des outils qui simplifient la vie, mais aussi des petits jeux.
+                        <br>Mais au-delà de la technique, ce qui me motive, c’est le partage.
+                        <br>Je sais que la programmation peut sembler compliquée quand on n'y a pas encore gouté, alors ici, j’explique mes projets avec des mots simples, sans tous les mots complexes qui peuvent parfois donner mal à la tête ^^
+                        </p>
+                    </th>
+                    <th>
+                        <img class="why" src="../images/sharing.jpg" alt="">
+                    </th>
+                </table>
+            </section>
+
+	        <section class="trouver">
+                <table>
+                    <th>
+                        <img class="trouver" src="../images/trouver.jpg" alt="">
+                    </th>
+                    <th>
+                        <h1 class="trouver">Ce que tu vas trouver ici</h1>
+                        <ul class="trouver">
+                            <li>Des projets que j’ai réalisés, détaillés étape par étape</li>
+                            <li>Des explications accessibles, même si tu n’as jamais codé ^^</li>
+                            <li>Une section pour proposer tes idées : si tu as un besoin spécifique, je peux peut-être créer un outil pour toi !</li>
+                        </ul>
+                    </th>
+                </table>
+            </section>
+
+	        <section class="interactif">
+                <table>
+                    <th>
+                        <h1 class="interactif">Un blog interactif</h1>
+                        <p class="interactif">
+                            Ce blog n’est pas juste un endroit où je poste mes créations, c’est aussi un espace d’échanges. 
+                        <br>Si tu as une idée, une question ou une suggestion, n’hésite pas à me contacter !
+                        <br>J’aime relever des défis et créer des solutions qui peuvent vraiment servir
+                        <br>
+                        <br>Que tu sois juste curieux ou que tu cherches un outil précis, tu es au bon endroit
+                        <br>Alors explore, découvre et surtout… amuse-toi !
+                        </p>
+                    </th>
+
+                    <th>
+                        <img class="interactif" src="../images/interactif.jpg" alt="">
+                    </th>
+                </table>
+
+            </section>
+
+            <section class="projectTitle">
+                
+            </section>
+            
+        </article>
+
+        <footer>
+            <h2>
+                Me Contacter:
+            </h2>
+            <table>
+                <th>
+                    <a class="link" href="https://www.instagram.com/_whixon_/">Instagram</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.youtube.com/@whixon_">Youtube</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
+                </th>
+            </table>
+	        <p>cyril.houppertz@gmail.com</p>
+        </footer>        
+    </body>
+</html>

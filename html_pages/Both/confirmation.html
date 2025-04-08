@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="When the information of the form is sended with succed">
+  	<meta name="keywords" content="confirmation">
+  	<meta name="author" content="Whixon">
+	<link rel="icon" href="../images/logo.png">
+	<link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body class="confirmation">
+        <header>
+            <table class="logoAndTitle">
+                <th class="spaced-cell">
+                    <th>
+                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
+                    </th>
+                    <th>
+                        <h2 class="begin">
+                            My Currents And Future Projects
+                        </h2>
+                    </th>
+                </th>
+            
+                <th class="spaced-cell">
+                    <th class="menu"><a href="../Eng/index.html">Home Page</a></th>
+                    <th class="menu"><a href="../Eng/myProjects.html">My Projects</a></th>
+		            <th class="menu"><a href="../funFact.html">funFact</a></th>
+                    <th class="menu"><a href="../Both/formulaire.html">Make a Request</a></th>
+		        </th>
+            </table>
+
+            <script>
+                let lastScrollY = window.scrollY; // Dernière position de scroll
+
+                window.addEventListener('scroll', () => {
+                    const header = document.getElementById('header');
+
+                    if (window.scrollY > 60) {
+                        // L'utilisateur défile vers le bas
+                        header.style.transform = 'translateY(-100%)'; // Cache le header
+                    } else {
+                        // L'utilisateur défile vers le haut
+                        header.style.transform = 'translateY(0)'; // Affiche le header
+                    }
+
+                    lastScrollY = window.scrollY; // Met à jour la position
+                });
+            </script>
+            
+        </header>
+        
+        <article>
+            <section class="confirmationbg">
+                <form class="confirmation">
+                    <h1 class="confirmation">Information Send with succed ! / Informations envoyée avec succès !</h1>
+                    <br>
+                    <p class="confirmation">
+                        Whixon will receive an email with the whole information of your project !
+                    <br>Whixon va recevoir un email avec toutes les informations de votre projets !
+                    </p>
+                </form>
+            </section>
+            
+        </article>
+
+        <footer>
+            <h2>
+                My Socials / Mes Réseaux:
+            </h2>
+            <table>
+                <th>
+                    <a class="link" href="https://www.instagram.com/_whixon_/">Instagram</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.youtube.com/@whixon_">Youtube</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
+                </th>
+            </table>
+            <br>
+            <div>Cyril.houppertz@gmail.com</div>
+        </footer>
+        
+    </body>
+</html>

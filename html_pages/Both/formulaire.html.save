@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+    <body>
+        <header>
+            <table class="logoAndTitle">
+                <th>
+                    <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
+                </th>
+                <th>
+                    <h2 class="begin">
+                        My Current and Future Projects
+                    </h2>
+                    <h3 class="bywhixon">
+                        By Whixon
+                    </h3>
+                </th>
+            </table>
+                
+            
+
+            <nav>
+                <ul>
+                    <li class="HomePage"><a href="../Eng/index.html">Home Page</a></li>
+                    <li><a href="../Eng/myProjects.html">My Projects</a></li>
+                    <li><a href="viewData.html">Projects Requested</a></li>
+                    <li class="lastTopic"><a href="formulaire.html">Make a request</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+
+        <article>
+            <section class="article">
+                <h1 class="presentation">Explanation / Explication</h1>
+                <h3 class="presentation2">Eng:</h3>
+                <p class="presentation2">
+                    Okay first, thank you to visit my WebSite ^^
+                <br>To explain, this form is to request some project that I can make for you!
+                <br>
+                <br>For exemple:
+                <br>you've some difficulties to do some task on your computer,
+                <br>you need an application who order some Informations in a folder,
+                <br>or you need an application to planned something easely.
+                <br>
+                <br>I'm here for you ! My job is to make a tools to make your life better and  smoother !
+                <br>
+                <br>(I'll delete every bad request, at my own judgment,
+                <br>so if you don't get response by me, it's for that ^^ Thanks for understanding)
+                </p>
+                <br>
+                <h3 class="presentation2">Fr:</h3>
+                <p class="presentation2">
+                    Okay first, thank you to visit my WebSite ^^
+                <br>To explain, this form is to request some project that I can>
+                <br>
+                <br>For exemple:
+                <br>you've some difficulties to do some task on your computer,
+                <br>you need an application who order some Informations in a fo>
+                <br>or you need an application to planned something easely.
+                <br>
+                <br>I'm here for you ! My job is to make a tools to make your l>
+                <br>
+                <br>(I'll delete every bad request, at my own judgment,
+                <br>so if you don't get response by me, it's for that ^^ Thanks
+                </p>
+            </section>
+
+            <section class="formulaire">
+                <form action="/save" method="post">
+                    <label for="title">Title of the project</label>
+                    <br>
+                    <input type="text" name="title" id="title" required>
+                    <br>
+                    <br>
+                    <label for="description">Description of the project</label>
+                    <br>
+                    <textarea name="description" id="description"></textarea>
+		                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                    <br><br>
+                    <label for="language">Language of Communication</label>
+                    <br>
+                    <select type="text" name="language" id="language">
+                        <option value="None">None</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                    </select>
+                    
+                    <br><br>
+                    <button type="submit">Soumettre</button>
+                </form>
+            </section>
+        </article>
+
+
+        <footer>
+            <h2>
+                My Socials:
+            </h2>
+            <table>
+                <th>
+                    <a class="link" href="https://www.instagram.com/_whixon_/">Instagram</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.youtube.com/@whixon_">Youtube</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
+                </th>
+            </table>
+        </footer>
+    </body>
+</html>

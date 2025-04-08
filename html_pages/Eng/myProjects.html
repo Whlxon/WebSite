@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="gtf-8">
+        <meta name="description" content="All important projects which I made">
+        <meta name="keywords" content="Python, projects, tkinter, pygame">
+  	<meta name="author" content="whixon">
+	<link rel="icon" href="../images/logo.png">
+	<link rel="stylesheet" href="../style/style.css">
+        <title>My Project</title>
+    </head>
+    <body>
+        <header id="header">
+
+            <table class="logoAndTitle">
+                <th class="spaced-cell">
+                    <th>
+                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
+                    </th>
+                    <th>
+                        <h2 class="begin">
+                            My Currents And Future Projects
+                        </h2>
+                    </th>
+                </th>
+            
+                <th class="spaced-cell">
+                    <th class="menu"><a href="../Eng/index.html">Home Page</a></th>
+                    <th class="menu"><a href="../Eng/myProjects.html">My Projects</a></th>
+		            <th class="menu"><a href="../funFact.html">funFact</a></th>
+                    <th class="menu"><a href="../Both/formulaire.html">Make a Request</a></th>
+                    <th>
+                        <div class="language-dropdown">
+                            <div class="dropdown-button">Language</div>
+                            <div class="dropdown-content">
+                                <a href="./Eng/myProjects.html">English</a>
+                                <a href="../Fr/myProjects-fr.html">Français</a>
+                            </div>
+                        </div>
+                    </th>
+		        </th>
+            </table>
+
+            <script>
+                let lastScrollY = window.scrollY; // Dernière position de scroll
+
+                window.addEventListener('scroll', () => {
+                    const header = document.getElementById('header');
+
+                    if (window.scrollY > 60) {
+                        // L'utilisateur défile vers le bas
+                        header.style.transform = 'translateY(-100%)'; // Cache le header
+                    } else {
+                        // L'utilisateur défile vers le haut
+                        header.style.transform = 'translateY(0)'; // Affiche le header
+                    }
+
+                    lastScrollY = window.scrollY; // Met à jour la position
+                });
+            </script>
+            
+        </header>
+        
+        <article>
+
+            <section class="bienProjet">
+                <br><br><br>
+                <h1 class="bienProjet">My projects</h1>
+                <p class="bienProjet">
+                    Yeah as you read, here you can see the whole projects what I did.
+                <br>The most of the projects are in python (My favorite programing language ! 🤩)
+                <br>
+                <br>To explain, each projects is downloadable with his title, just click on it and see what happend !
+                </p>
+            </section>
+
+            <section class="ticTacToe">
+                <table>
+                    <th>
+                        <img class="ticTacToe" src="../images/oxo.PNG" alt="a screenshot showing a window with the game OXO or Tic Tac Toe">
+                    </th>
+                    <th>
+                        <h1 class="ticTacToe"><a href="">OXO or Tic Tac Toe</a></h1>
+                                                
+                        <h3 class="ticTacToe">
+                            📌 Objective:
+                        </h3>
+                    
+                        <br>
+                    
+                        <p class="ticTacToe">
+                            Hi there!
+                        <br>This is one of my first projects that I created!
+                        <br>
+                        <br>This project allows you to play the famous Tic Tac Toe game with a friend on the same screen,
+                        <br>or with a bot that I developed myself.
+                        <br>The goal is to offer a simple and intuitive gaming session for a smooth and enjoyable experience.
+                        </p>
+                        <br>
+                    
+                        <h3 class="ticTacToe">
+                            🚀 Game Objective:
+                        </h3>
+                        
+                        <p class="ticTacToe">
+                        <br>The goal of the game is to place 3 shapes in a row.
+                        <br>For example:
+                        <br>
+                        <br> X | O | O
+                        <br> X | X | X
+                        <br> O | O | 
+                        <br>
+                        <br>In this example, player X wins because they placed 3 Xs in a row!
+                        </p>
+                        <br>
+                        <h3 class="ticTacToe">
+                            🛠 Technologies Used:
+                        </h3>
+                        <br>
+                        <p class="ticTacToe">
+                            The game was created in Python using Tkinter, a standard module for building graphical user interfaces (GUI).
+                        <br>Tkinter is a built-in Python library that makes it easy to create windows, buttons, labels (titles), and many other interactive elements.
+                        <br>It is an ideal tool for designing simple and fast applications with a user-friendly interface.
+                        <br>
+                        <br>Tkinter and many other libraries are created by the community, meaning other contributors make it possible for people like me to develop such projects.
+                        </p>
+                    </th>
+                </table>
+            </section>
+
+            <section class="enigme">
+                <table>
+                    <th>
+                        <h1 class="enigme"><a href="https://whixon.itch.io/enigmatic-game">Enigmatic Game</a></h1>
+                        <h3 class="enigme">
+                            Explanation:
+                        </h3>
+
+                        <br>
+
+                        <p class="enigme">
+                            Enigmatic Game,
+                        <br>this is the one of my biggest projects which I made !
+                        </p>
+                        <br>
+                        <p class="enigme">
+                            The game is made with my own hand, I program the entire game in python with Pygame package.
+                        </p>
+                        <p class="enigme">
+                        <br>A package is a part of script which is program by someone else and it's to not re write it again,
+                        <br>and with this package we can make some game with basic hitbox, ATH, etc..
+                        </p>
+
+                        <br>
+
+                        <h3 class="enigme">
+                            Goal of the game:
+                        </h3>
+
+                        <p class="enigme">
+                        <br>The goal of the game is to solve enigm, there is 4 level. Each level have they own thematic and mechanic.
+                        <br>As you see on the screenshot, I used pokemon background to make a level of this game. (I changed it because of copyright, so right now there is a simple background :/)
+                        </p>
+                    </th>
+                    <th>
+                        <img class="enigme" src="../images/6PCXsU.jpg" alt="A screenshot of a game">
+                    </th>
+                </table>
+            </section>
+
+            <section class="histoire">
+                <table>
+                    <th>
+                        <img class="histoire" src="../images/Write_Story.png" alt="a scrrenshot of a game">
+                    </th>
+                    <th>
+                        <h1 class="histoire"><a href="https://whixon.itch.io/writed-story">Writed Story</a></h1>
+                        
+                        
+                        <h3 class="histoire">
+                            Explanation:
+                        </h3>
+                        
+                        <br>
+
+                        <p class="histoire">
+                            Writed Story,
+                        <br>It's a simple game where we play it on the console (Cmd) of the computer
+                        </p>
+                        <br>
+                        <p class="histoire">
+                            This game is one of my first projects what I did, so it's for that the game isn't more complex than the two before.
+                        </p>
+                        <p class="histoire">
+                        <br>The Console is an window where you can write some command for your software. The Cmd is most used to managed some folder, files, Computer Settings and more...
+                        </p>
+                        <br>
+                        <p class="histoire">
+                            In this exemple I use the Cmd to play at my game !
+                        </p>
+                        <br>
+                        <h3 class="histoire">
+                            Goal of the game:
+                        </h3>
+
+                        <br>
+                        <p class="histoire">
+                            The goal of the game is to escape of a ancient temple,
+                        <br>and to do that you need to take some important choice that can change the future of your gameplay !
+                        </p>
+                    </th>
+                </table>
+            </section>
+            
+        </article>
+
+        <footer>
+            </form>
+
+            <h2>
+                Contact Me:
+            </h2>
+            <table>
+                <th>
+                    <a class="link" href="https://www.instagram.com/_whixon_/">Instagram</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.youtube.com/@whixon_">Youtube</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
+                </th>
+            </table>
+	    <p>cyril.houppertz@gmail.com</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Daily funfact every two days, if you want to play a bit try to guess if he's true or false ^^">
+  	<meta name="keywords" content="funfact, fun, playing, guess">
+  	<meta name="author" content="Whixon">
+	<link rel="icon" href="../images/logo.png">
+	<link rel="stylesheet" href="../style/style.css">
+        <title>FunFact Page</title>
+    </head>
+    <body>
+        <header id="header">
+
+            <table class="logoAndTitle">
+                <th class="spaced-cell">
+                    <th>
+                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
+                    </th>
+                    <th>
+                        <h2 class="begin">
+                            My Current 	and Future Projects
+                        </h2>
+                    </th>
+                </th>
+                
+                <th class="spaced-cell">
+                    <th class="menu"><a href="../index.html">Home Page</a></li>
+                    <th class="menu"><a href="../myProjects.html">My Projects</a></li>
+	                <th class="menu"><a href="../funFact.html">FunFact</a></li>
+                    <th class="menu"><a href="../Both/formulaire.html">Make a request</a></li>
+                </th>
+            </table>
+
+            <script>
+                let lastScrollY = window.scrollY; // Dernière position de scroll
+
+                window.addEventListener('scroll', () => {
+                    const header = document.getElementById('header');
+
+                    if (window.scrollY > 60) {
+                        // L'utilisateur défile vers le bas
+                        header.style.transform = 'translateY(-100%)'; // Cache le header
+                    } else {
+                        // L'utilisateur défile vers le haut
+                        header.style.transform = 'translateY(0)'; // Affiche le header
+                    }
+
+                    lastScrollY = window.scrollY; // Met à jour la position
+                });
+            </script>
+            
+        </header>
+	
+	<article>
+        <section class="bienfact">
+            <br><br><br>
+            <h1 class="bienfact">FunFact</h1>
+            <h4 class="bienfact">Hello and welcome to my WebSite,                     
+            <br> I'm glade to finally take all of my projects and finally show it in a one place.
+            <br>
+            <br> This WebSite is one of a lot of project which I made.<h4>
+        </section>
+
+        <section class="explanation">
+            <h1 class="explanation">Explanation ! / Explication !</h1>
+            <h3 class="explanation">Eng: </h3>
+            <p class="explanation"> 
+                Hy and welcome to the interactive part of my website !
+            <br>Here the goal is simple ! Every two days I'll post a Fun Fact and your goal is to guess if he's true or false !
+            <br>
+            <br>For every funfact there will be a vote system, and you will maybe receive a email to say if you win or not 
+            <br>(idk now how I will do that but you've the idea ^^)
+            </p>
+            <br>
+            <h3 class="explanation">Fr:</h3>
+            <p class="explanation">
+                Salut et bienvenue à la partie interactive de mon Site Web !
+            <br>Ici le but est simple ! Tous les deux jours je vais poster une annecdote et votre but sera de deviner si elle est vraie ou fausse !
+            <br>
+            <br>Pour chaque annecdote il y aura un système de vote, et vous recevrez un email disant si vous avez gagné ou pas
+            <br>(je ne sais pas encore comment m'y prendre mais vous avez l'idée ^^)
+            </p>
+            <br>
+            <h1 class="explanation">Daily FunFact ! / Annecdote du jour !</h1>
+	    </section>
+	
+	    <section style="display: none;" class="article">
+            <h1 class="presentation">
+                test FunFact / Annecdote test
+            </h1>
+            <br>
+            <h3 class="presentation2">Eng:</h3>
+            <br>
+            <p class="presentation2">This is an example of a funfact !</p>
+            <br>
+            <h3 class="presentation2">Fr:</h3>
+            <br>
+            <p class="presentation2">Ceci est un exemple d'annecdote !</p>
+            <p style="text-align: center;" class="presentation2">
+                Alors vraie ou faux ?
+            <br>So True or False ?
+            </p>
+            <div style="text-align: center;">
+                <button class="monBouton">True</button>
+                <button class="monBouton">False</button>
+            </div>
+            <br>
+            <p id="monTexte" class="presentation2" style="text-align: center;" style="display: none;"></p>
+
+ 		    <script>
+                // Récupérer tous les boutons avec la classe "monBouton"
+                const boutons = document.querySelectorAll('.monBouton');
+                const texte = document.getElementById('monTexte');
+
+                // Ajouter un événement à chaque bouton
+                boutons.forEach(bouton => {
+                    bouton.addEventListener('click', () => {
+                            
+                        // Vérifier le contenu du bouton cliqué
+                        if (bouton.textContent === 'True') {
+                            texte.textContent = "Good job !\nBien joué !";
+                        } else if (bouton.textContent === 'False') {
+                            texte.textContent = "It was true !\nC'était vrai !";
+                        }
+                        
+                        // Rendre le texte visible
+                        texte.style.display = 'block';
+                    });
+                });
+		    </script>
+		
+	        </section>
+        </article>
+	
+	    <footer>
+            <h2>
+               Contacte Me / Me Contacter:
+            </h2>
+            <table>
+                <th>
+                    <a class="link" href="https://www.instagram.com/_whixon_/">Instagram</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.youtube.com/@whixon_">Youtube</a>
+                </th>
+                <th>
+                    <p>-</p>
+                </th>
+                <th>
+                    <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
+                </th>
+            </table>
+	        <p>cyril.houppertz@gmail.com</p>
+        </footer>        
+    </body>
+</html>

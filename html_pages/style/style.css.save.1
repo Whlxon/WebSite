@@ -1,0 +1,867 @@
+/* on change la police d'écriture de tout les champs de text et on fait que il n'y ai pas de bordur et que les élements prennent un max de place */
+*{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    padding: 0px;
+}
+
+/* Tête du site */
+header{
+    margin-right: 10%;
+    transition: transform 0.5s ease-out;
+
+    background-color: transparent; /* Couleur gris clair */
+    position: sticky;
+    top:0%;
+}
+
+/* Logo du site */
+img.logo{
+    scale: 46%;
+}
+
+/* */
+h2.begin{
+    font-size: 1vw;
+}
+
+table.logoAndTitle{
+    font-size: 1vw; 
+    margin: 0 auto; /* Centre la table horizontalement */
+    display: table; /* Assure le comportement en tant que table */
+    border-collapse: separate;
+}
+
+th.menu{
+    border-collapse: separate; /* Permet d'espacer les cellules */
+    padding-right: 2vw; ;
+}
+
+/* Mets des espaces entre la cellule du titre et logo et le menu de selection*/
+.spaced-cell {
+
+    padding-right: 20vw; /* Ajoute de l'espace à droite */
+}
+
+/* Bouton principal */
+.dropdown-button {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+/* on change la couleur du bouton au survole */
+.dropdown-button:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+/* on paramètre le menu */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+/* Afficher le menu au survol */
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Liste déroulante cachée */
+.dropdown-content {
+    background-color: #0000004b;
+    display: none;
+    position: absolute;
+    min-width:  1.25vw;
+    font-size: 0.75vw;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a { 
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px 5px 5px 5px;    
+}
+
+/* changer la couleur du texte de langue au survol */
+.dropdown-content a:hover{
+    background-color: #0000004b;
+}
+
+/*
+* Menu principal du site change les liens
+*/
+table th a{
+    color: #333;
+    text-decoration: none;
+}
+
+table th a:hover{
+    text-decoration: underline;
+}
+
+/*
+* Section "Bienvenue" avec photo ski
+*/
+
+h1.bienvenue{
+    text-align: center;
+    font-family: "Brush Script MT", cursive; 
+    font-size: 5vw;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 50; 
+    line-height: 150.4px;
+    margin-right: 35%;
+    margin-left: 35%;
+    border-radius: 105px 105px 105px 105px;
+}
+
+
+section.bienvenue{
+    overflow: hidden;
+    background-image: url("../images/bg1.JPG");
+    background-size: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */ 
+    background-position: center; /* Centre l'image */ 
+    height: ; /* Hauteur égale à la hauteur de la fenêtre */ 
+    
+    box-shadow: 0px 0px 12px rgb(0, 0, 0);
+    border-radius: 1000px 1000px 3px 3px;
+}
+
+
+section.bienvenue:before {
+    overflow: hidden;
+    content: ""; /* Nécessaire pour la pseudo-classe */
+    position:fixed ;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
+    background-size: 120px;
+    z-index: -1; /* Place la couleur derrière l'image de fond */
+}
+
+h4.bienvenue{
+    font-size: 1vw;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 15%;
+    margin-right: 35%;
+    margin-left: 35%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff7e;
+}
+
+/*
+* Section "presentation"
+*/
+
+img.presentation{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    margin-top: 1vw;
+    margin-left: 3%;
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+}
+
+h1.presentation{
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw; 
+
+    text-decoration: underline;
+}
+
+table p.presentation{
+    text-align: left;
+    margin-left: 2%;
+    font-size: 1vw;
+}
+
+section.presentation{
+    overflow: hidden;
+    height: 50vw;
+    background-color: #af9d389a;
+}
+
+/*
+* Section "Pourquoi ce blog ?"
+*/
+
+img.why{
+    margin-right: 5%;
+    margin-top: 120px;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+}
+
+h1.why{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+    
+
+    text-decoration: underline;
+}
+
+section.why table{
+    margin-left: 2%;
+}
+
+
+table p.why{
+    text-align: left;
+    font-size: 1vw;
+}
+
+section.why{
+    overflow: hidden;
+    height: 50vw;
+    background-color: #1d98a157;
+}
+
+/*
+* Section "Ce que tu va trouver ici"
+*/
+
+section.trouver{
+    overflow: hidden;
+    height: 50vw;
+    background-color: #a11d5b57;
+}
+
+h1.trouver{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+table ul.trouver{
+    text-align: left;
+}
+
+img.trouver{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 125px;
+    margin-right: 120px;
+}
+
+ul.trouver{
+    list-style-type:circle ;
+    font-size: 1vw;
+}
+
+/*
+* Section "Ce que tu va trouver ici"
+*/
+
+section.interactif{
+    overflow: hidden;
+    height: 50vw;
+    background-color: #2ca11d57;
+}
+
+h1.interactif{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+img.interactif{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 125px;
+    margin-left: 150px;
+}
+
+p.interactif{
+    font-size: 1vw;
+    text-align: left;
+}
+
+
+/*
+* Section "Bienvenue" dans Mes Projets avec Photo ski
+*/
+
+h1.bienProjet{
+    text-align: center;
+    font-family: "Brush Script MT", cursive; 
+    font-size: 5vw; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 50; 
+    line-height: 150.4px;
+    margin-right: 35%;
+    margin-left: 35%;
+    border-radius: 105px 105px 105px 105px;
+}
+
+section.bienProjet{
+    background-image: url("../images/bg2.JPG");
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image */
+    height: 105vh; /* Hauteur égale à la hauteur de la fenêtre */
+    
+    box-shadow: 0px 0px 12px rgb(0, 0, 0);
+    border-radius: 1000px 1000px 3px 3px;
+}
+
+section.bienProjet:before {
+    overflow: hidden;
+    content: ""; /* Nécessaire pour la pseudo-classe */
+    position:fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
+    background-size: 120px;
+    z-index: -1; /* Place la couleur derrière l'image de fond */
+}
+
+p.bienProjet{
+    border-radius: 25px 25px 25px 25px;
+    font-weight: 700;
+    font-size: 1vw;
+    margin-top: 15%;
+    margin-right: 30%;
+    margin-left: 30%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffffb0;
+}
+
+/*
+* Section "Tic Tac Toe"
+*/
+
+section.ticTacToe{
+    overflow: hidden;
+    height: 60vw;
+    background-color: #af9d389a;
+}
+
+img.ticTacToe{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 1vw;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1.ticTacToe{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+p.ticTacToe{
+    font-size: 1vw;
+    text-align: left;
+}
+
+h3.ticTacToe{
+    text-decoration: underline;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+/*
+* Section "Enigmatic Game"
+*/
+
+section.enigme{
+    overflow: hidden;
+    height: 60vw;
+    background-color: #1d98a157;
+}
+
+img.enigme{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 1vw;
+    margin-top: 115px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1.enigme{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+p.enigme{
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 1vw;
+    text-align: left;
+}
+
+h3.enigme{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: underline;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+/*
+* Section "Histoire écrite"
+*/
+
+section.histoire{
+    overflow: hidden;
+    height: 60vw;
+    background-color: #a11d5b57;
+}
+
+img.histoire{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 1vw;
+    margin-top: 115px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1.histoire{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+p.histoire{
+    font-size: 1vw;
+    text-align: left;
+}
+
+h3.histoire{
+    text-decoration: underline;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+
+/*
+* Section "Bienvenue" de "funfact" avec photo ski
+*/
+
+h1.bienfact{
+    text-align: center;
+    font-family: "Brush Script MT", cursive; 
+    font-size: 5vw; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 50; 
+    line-height: 150.4px;
+    margin-right: 35%;
+    margin-left: 35%;
+    border-radius: 105px 105px 105px 105px;
+}
+
+section.bienfact{
+    overflow: hidden;
+    background-image: url("../images/bg3.JPG");
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image */
+    height: 105vh; /* Hauteur égale à la hauteur de la fenêtre */
+    
+    box-shadow: 0px 0px 12px rgb(0, 0, 0);
+    border-radius: 1000px 1000px 3px 3px;
+}
+
+section.bienfact:before {
+    overflow: hidden;
+    content: ""; /* Nécessaire pour la pseudo-classe */
+    position:fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
+    background-size: 120px;
+    z-index: -1; /* Place la couleur derrière l'image de fond */
+}
+
+h4.bienfact{
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 20vw;
+    font-size: 1vw; 
+    margin-right: 35%;
+    margin-left: 35%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff7e;
+}
+
+/*
+* Section "Tic Tac Toe"
+*/
+
+section.explanation{
+    height: auto;
+    background-color: #af9d389a;
+}
+
+img.explanation{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: auto;
+    margin-top: 115px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1.explanation{
+
+    font-style: italic;
+
+    margin-bottom: 3%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+p.explanation{
+    font-weight: 700;
+    font-size: 1vw;
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h3.explanation{
+    margin-left: 3%;
+    margin-right: 3%;
+    text-decoration: underline;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+/*
+* Section "Bienvenue" dans Mes Projets avec Photo ski
+*/
+
+h1.bienform{
+    text-align: center;
+    font-family: "Brush Script MT", cursive; 
+    font-size: 5vw; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 50; 
+    line-height: 150.4px;
+    margin-right: 35%;
+    margin-left: 35%;
+    border-radius: 105px 105px 105px 105px;
+}
+
+section.bienform{
+    background-image: url("../images/bg4.JPG");
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image */
+    height: 105vh; /* Hauteur égale à la hauteur de la fenêtre */
+    
+    box-shadow: 0px 0px 12px rgb(0, 0, 0);
+    border-radius: 1000px 1000px 3px 3px;
+}
+
+section.bienform:before {
+    overflow: hidden;
+    content: ""; /* Nécessaire pour la pseudo-classe */
+    position:fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
+    background-size: 120px;
+    z-index: -1; /* Place la couleur derrière l'image de fond */
+}
+
+/*
+* Section "Tic Tac Toe"
+*/
+
+section.explanation_form{
+    height: auto;
+    background-color: #af9d389a;
+}
+
+img.explanation_form{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 1vw;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1.explanation_form{
+
+    font-style: italic;
+
+    margin-bottom: 3%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+p.explanation_form{
+    font-weight: 700;
+    font-size: larger;
+    text-align: left;
+    font-size: 1vw; 
+}
+
+h3.explanation_form{
+    text-decoration: underline;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+
+/*
+* formulaire dans la page formulaire du site
+*/
+section.formulaire{
+
+    text-align: center;
+
+    background-color: #F0EBE3;
+}
+
+
+/*
+* Change tout les formulaire
+*/
+form {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+* Change tout les label d'un
+*/
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*
+* Change tout les label et textarea
+*/
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+}
+
+
+/*
+* Change tout les textarea
+*/
+textarea{
+    padding: 6%;
+    width: 80%;
+}
+
+/*
+* Change les input du formulaire
+*/
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*
+* Change les buttons
+*/
+button {
+    margin-bottom: 1%;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/*
+* Change quand on survole le button
+*/
+button:hover {
+    background-color: #0056b3;
+}
+
+/*
+* Change les bouttons avec la class submit
+*/
+.submit{
+    background-color: #0056b3;
+}
+
+.monBouton{
+    background-color: #0056b3;
+}
+
+.monBouton:hover{
+    background-color: #6bacf3;
+}
+
+.submit:hover{
+   background-color: #6bacf3;
+}
+
+h3.presentation2{
+    text-decoration: underline;
+}
+
+.presentation2{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 650;
+}
+
+
+
+a.link{
+    color: rgb(238, 237, 185);
+}
+
+footer{
+    color: rgb(238, 237, 185);
+    background-color: #151922;
+    text-align: center;
+}
+
+form.newsletter label{
+    color: rgb(238, 237, 185);
+}
+
+form.newsletter button{
+    background-color: rgb(238, 237, 185);
+    color: black;
+}
+
+form.newsletter input{
+    width: 30%;
+}
+
+.titleDesc, .titleLan, .description, .language{
+    text-align: left;
+}
+
+.titleDesc, .titleLan{
+    font-size: large;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+
+div.title{
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.cell {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    text-align: left;
+
+    text-align: center;
+    font-style: italic;
+}
+
+.title, .description, .language {
+    margin: 5px 0;
+}
+
+.title b, .description b, .language b {
+    color: #333;
+}
+
+
+

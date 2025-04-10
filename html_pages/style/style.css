@@ -536,7 +536,7 @@ section.Bombe{
 
 img.Bombe{
     box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
-    width: 30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    width:  30vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
     height: auto;
     margin-top: 1vw;
     margin-top: 115px;

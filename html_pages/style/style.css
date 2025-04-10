@@ -120,8 +120,6 @@ h1.bienvenue{
     font-variant: normal; 
     font-weight: 50;
 
-    line-height: 150.4px;
-
     margin-right: 35%;
     margin-left: 35%;
 
@@ -170,7 +168,8 @@ section.bienvenue:before {
 h4.bienvenue{
     font-size: 1vw;
     border-radius: 25px 25px 25px 25px;
-    margin-top: 15%;
+    margin-top: 25vw;
+    display: flex;
     margin-right: 35%;
     margin-left: 35%;
     color: rgb(0, 0, 0);
@@ -344,14 +343,14 @@ h1.bienProjet{
     font-size: 5vw; 
     font-style: normal; 
     font-variant: normal; 
-    font-weight: 50; 
-    line-height: 150.4px;
+    font-weight: 50;
     margin-right: 35%;
     margin-left: 35%;
     border-radius: 105px 105px 105px 105px;
 }
 
 section.bienProjet{
+    overflow: hidden;
     background-image: url("../images/bg2.JPG");
     background-size: cover;
     margin-right: 20px;
@@ -368,7 +367,6 @@ section.bienProjet{
 }
 
 section.bienProjet:before {
-    overflow: hidden;
     content: ""; /* Nécessaire pour la pseudo-classe */
     position:fixed ;
     top: 0;
@@ -384,12 +382,15 @@ p.bienProjet{
     border-radius: 25px 25px 25px 25px;
     font-weight: 700;
     font-size: 1vw;
-    margin-top: 15%;
+    margin-top: 25vw;
+    display: flex;
     margin-right: 30%;
     margin-left: 30%;
     color: rgb(0, 0, 0);
     background-color: #ffffffb0;
 }
+
+    
 
 /*
 * Section "Tic Tac Toe"
@@ -583,7 +584,6 @@ h1.bienfact{
     font-style: normal; 
     font-variant: normal; 
     font-weight: 50; 
-    line-height: 150.4px;
     margin-right: 35%;
     margin-left: 35%;
     border-radius: 105px 105px 105px 105px;
@@ -620,7 +620,8 @@ section.bienfact:before {
 
 h4.bienfact{
     border-radius: 25px 25px 25px 25px;
-    margin-top: 20vw;
+    margin-top: 25vw;
+    display: flex;
     font-size: 1vw; 
     margin-right: 35%;
     margin-left: 35%;

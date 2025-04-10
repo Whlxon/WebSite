@@ -629,7 +629,66 @@ h4.bienfact{
 }
 
 /*
-* Section "Tic Tac Toe"
+* Section "funfact"
+*/
+section.funfact{
+    overflow: hidden;
+    height: auto;
+    background-color: #1d98a157;
+}
+
+img.funfact{
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
+    width: 30px; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
+    height: auto;
+    margin-top: 1vw;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1.funfact{
+
+    font-style: italic;
+
+    margin-bottom: 15%;
+  
+    text-align: center;
+    font-size: 2vw;
+
+    text-decoration: underline;
+}
+
+p.funfact{
+    font-size: 1vw;
+    text-align: left;
+}
+
+h3.funfact{
+    text-decoration: underline;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+div.funfact{
+    font-size: 1.5vw;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.monBouton{
+    background-color: #0056b3;
+    color: white;
+    padding: 1%;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+}
+
+.monBouton:hover{
+    background-color: rgba(39, 131, 230, 0.788)
+}
+
+/*
+* Section "explication"
 */
 
 section.explanation{
@@ -639,10 +698,9 @@ section.explanation{
 
 img.explanation{
     box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.788);
-    width: auto;
-    margin-top: 115px;
-    margin-left: 80px;
-    margin-right: 80px;
+    width: 25vw;
+    height: auto;
+    margin-right: 3vw;
 }
 
 h1.explanation{
@@ -918,14 +976,6 @@ button:hover {
 */
 .submit{
     background-color: #0056b3;
-}
-
-.monBouton{
-    background-color: #0056b3;
-}
-
-.monBouton:hover{
-    background-color: #6bacf3;
 }
 
 .submit:hover{

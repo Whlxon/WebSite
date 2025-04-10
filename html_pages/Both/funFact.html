@@ -63,50 +63,62 @@
         </section>
 
         <section class="explanation">
-            <h1 class="explanation">Explanation ! / Explication !</h1>
-            <h3 class="explanation">Eng: </h3>
-            <p class="explanation"> 
-                Hy and welcome to the interactive part of my website !
-            <br>Here the goal is simple ! Every two days I'll post a Fun Fact and your goal is to guess if he's true or false !
-            <br>
-            <br>For every funfact there will be a vote system, and you will maybe receive a email to say if you win or not 
-            <br>(idk now how I will do that but you've the idea ^^)
-            </p>
-            <br>
-            <h3 class="explanation">Fr:</h3>
-            <p class="explanation">
-                Salut et bienvenue à la partie interactive de mon Site Web !
-            <br>Ici le but est simple ! Tous les deux jours je vais poster une annecdote et votre but sera de deviner si elle est vraie ou fausse !
-            <br>
-            <br>Pour chaque annecdote il y aura un système de vote, et vous recevrez un email disant si vous avez gagné ou pas
-            <br>(je ne sais pas encore comment m'y prendre mais vous avez l'idée ^^)
-            </p>
-            <br>
-            <h1 class="explanation">Daily FunFact ! / Annecdote du jour !</h1>
+            <table>
+                <th>
+                    <img class="explanation" src="../images/explanation_fact.jpeg" alt="The pîcture is showing someone who search someone with red wires on a board">
+                </th>
+                <th>
+                    <h1 class="explanation">Explanation ! / Explication !</h1>
+                    <h3 class="explanation">Eng: </h3>
+                    <p class="explanation"> 
+                        Hy and welcome to the interactive part of my website !
+                    <br>Here the goal is simple ! Every two days I'll post a Fun Fact and your goal is to guess if he's true or false !
+                    <br>
+                    <br>For the funfact, the system is simple, press on the specific button with the right choice and the answer will appear !
+                    </p>
+                    <br>
+                    <h3 class="explanation">Fr:</h3>
+                    <p class="explanation">
+                        Salut et bienvenue à la partie interactive de mon Site Web !
+                    <br>Ici le but est simple ! Tous les deux jours je vais poster une annecdote et votre but sera de deviner si elle est vraie ou fausse !
+                    <br>
+                    <br>Pour l'annecdote, le système est simple, appuyez sur le bouton en fonction de ce que vous pensez et la réponse s'affichera !
+                    </p>
+                    <br>
+                    <h1 class="explanation">Daily FunFact ! / Annecdote du jour !</h1>
+                </th>
+            </table>
 	    </section>
-	
-	    <section style="display: none;" class="article">
-            <h1 class="presentation">
-                test FunFact / Annecdote test
-            </h1>
-            <br>
-            <h3 class="presentation2">Eng:</h3>
-            <br>
-            <p class="presentation2">This is an example of a funfact !</p>
-            <br>
-            <h3 class="presentation2">Fr:</h3>
-            <br>
-            <p class="presentation2">Ceci est un exemple d'annecdote !</p>
-            <p style="text-align: center;" class="presentation2">
+        
+	    <section class="funfact">
+            <table>
+                <th>
+                    <h1 class="funfact">
+                        Daily FunFact ! / Annecdote du jour !
+                    </h1>
+                    <br>
+                    <h3 class="funfact">Eng:</h3>
+                    <br>
+                    <p class="funfact">This is an example of a funfact !</p>
+                    <br>
+                    <h3 class="funfact">Fr:</h3>
+                    <br>
+                    <p class="funfact">Ceci est un exemple d'annecdote !</p>
+                </th>
+                <th>
+                    <img src="" alt="A picture which explane the funfact">
+                </th>
+            </table>
+            <div style="text-align: center;" class="funfact">
                 Alors vraie ou faux ?
             <br>So True or False ?
             </p>
             <div style="text-align: center;">
-                <button class="monBouton">True</button>
-                <button class="monBouton">False</button>
+                <button class="monBouton">True / vrai</button>
+                <button class="monBouton">False / faux</button>
             </div>
             <br>
-            <p id="monTexte" class="presentation2" style="text-align: center;" style="display: none;"></p>
+            <p id="monTexte" class="funfact" style="text-align: center;" style="display: none;"></p>
 
  		    <script>
                 // Récupérer tous les boutons avec la classe "monBouton"
@@ -118,9 +130,9 @@
                     bouton.addEventListener('click', () => {
                             
                         // Vérifier le contenu du bouton cliqué
-                        if (bouton.textContent === 'True') {
+                        if (bouton.textContent === 'True / vrai') {
                             texte.textContent = "Good job !\nBien joué !";
-                        } else if (bouton.textContent === 'False') {
+                        } else if (bouton.textContent === 'False / faux') {
                             texte.textContent = "It was true !\nC'était vrai !";
                         }
                         

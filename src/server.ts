@@ -98,7 +98,42 @@ app.post("/save", async (req: Request, res: Response) => {
         text: `Le titre du projet est:\n${title} \n\nLa description:\n${description}\n\nL'email de la personne:\n${email}\n\nLa langue de communication est:\n${language}`,
     };
 
+    // Contenu de l'email
+    const mailToClient = {
+        from: "cyril.houppertz@gmail.com",
+        to: `${email}`, // Destinataire
+        subject: "Email sent successfully ! / Email envoyé avec succès !",
+        html: `<h1>Fr:</h1>
+               <h2>Corp du projet envoyé</h2>
+               <br>
+               <br>
+               <h3><u><strong>Le titre du projet est :</strong></u></h3>
+               <div>${title}</div>
+               <br>
+               <h3><u><strong>Description :</strong></u></h3>
+               <div>${description}</div>
+               <br>
+               <h3><u><strong>Langue de communication : ${language}</strong></u></h3>
+               <div> ${language}</div>
+               <br>
+               <br>
+               <br>
+               <h1>Eng:</h1>
+               <h2>Body of project</h2>
+               <br>
+               <br>
+               <h3><u><strong>project Title :</strong></u></h3>
+               <div>${title}</div>
+               <br>
+               <h3><u><strong>Descriptions :</strong></u></h3>
+               <div>${description}</div>
+               <br>
+               <h3><u><strong>Communication Language : ${language}</strong></u></h3>
+               <div> ${language}</div>`,
+    };
+
     try {
+        await transporter.sendMail(mailOptions);
         await transporter.sendMail(mailOptions);
         res.sendFile(path.resolve(__dirname, '../html_pages/Both/confirmation.html'));
     } catch (error) {

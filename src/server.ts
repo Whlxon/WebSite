@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '../html_pages')));
 
 // Connexion à SQLite
 const dbPromise = open({
-    filename: '/home/cyreal/Desktop/WebSite_project/db/projets_db.sqlite',
+    filename: 'E:/Server_projet/WebSite/db/projets_db.sqlite',
     driver: sqlite3.Database,
 });
 
@@ -101,7 +101,7 @@ app.post("/save", async (req: Request, res: Response) => {
     // Contenu de l'email
     const mailToClient = {
         from: "cyril.houppertz@gmail.com",
-        to: `${email}`, // Destinataire
+        to: email, // Destinataire
         subject: "Email sent successfully ! / Email envoyé avec succès !",
         html: `<h1>Fr:</h1>
                <h2>Corp du projet envoyé</h2>
@@ -134,7 +134,7 @@ app.post("/save", async (req: Request, res: Response) => {
 
     try {
         await transporter.sendMail(mailOptions);
-        await transporter.sendMail(mailOptions);
+        await transporter.sendMail(mailToClient);
         res.sendFile(path.resolve(__dirname, '../html_pages/Both/confirmation.html'));
     } catch (error) {
         console.error("Erreur lors de l'envoi de l'email :", error);

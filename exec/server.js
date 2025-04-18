@@ -26,7 +26,7 @@ app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.static(path_1.default.join(__dirname, '../html_pages')));
 // Connexion à SQLite
 const dbPromise = (0, sqlite_1.open)({
-    filename: 'E:/Server_projet/WebSite/db/projets_db.sqlite',
+    filename: '/home/cyreal/Desktop/WebSite_project/WebSite/db/projets_db.sqlite',
     driver: sqlite3_1.default.Database,
 });
 app.get('/', (req, res) => {

@@ -636,6 +636,7 @@ section.funfact{
     overflow: hidden;
     height: auto;
     background-color: #1d98a157;
+    padding: 4%;
 }
 
 img.funfact{
@@ -643,7 +644,7 @@ img.funfact{
     width: 25vw; /* La largeur de l'image sera 50% de la largeur de la fenêtre */
     height: auto;
     margin-top: 1vw;
-    margin-left: 7%;
+    margin-left: 4%;
 }
 
 h1.funfact{

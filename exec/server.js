@@ -129,7 +129,7 @@ app.post("/save", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield transporter.sendMail(mailOptions);
         yield transporter.sendMail(mailToClient);
-        res.sendFile(path_1.default.resolve(__dirname, '../html_pages/Both/confirmation.html'));
+        res.sendFile(path_1.default.resolve(__dirname, '../html_pages/Both/formulaire.html'));
     }
     catch (error) {
         console.error("Erreur lors de l'envoi de l'email :", error);

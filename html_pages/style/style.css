@@ -130,7 +130,8 @@ h1.bienvenue{
 section.bienvenue{
     overflow: hidden;
 
-    background-image: url("../images/bg1.JPG");
+    background-image: url("../images/bg1.JPG"); 
+    background-attachment: fixed; /* Garde l'image fixe */
     background-size: cover;
     background-repeat: no-repeat; /* Empêche la répétition de l'image */ 
     background-position: center; /* Centre l'image */ 
@@ -352,6 +353,7 @@ h1.bienProjet{
 section.bienProjet{
     overflow: hidden;
     background-image: url("../images/bg2.JPG");
+    background-attachment: fixed; /* Garde l'image fixe */
     background-size: cover;
     margin-right: 20px;
     margin-left: 20px;
@@ -593,6 +595,7 @@ section.bienfact{
     overflow: hidden;
     background-image: url("../images/bg3.JPG");
     background-repeat: no-repeat; /* Empêche la répétition de l'image */ 
+    background-attachment: fixed; /* Garde l'image fixe */
     background-size: cover;
     margin-right: 20px;
     margin-left: 20px;
@@ -752,6 +755,7 @@ h1.bienform{
 
 section.bienform{
     background-image: url("../images/bg4.JPG");
+    background-attachment: fixed; /* Garde l'image fixe */
     background-size: cover;
     margin-right: 20px;
     margin-left: 20px;
@@ -774,8 +778,9 @@ section.bienform:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
-    background-size: 120px;
+    background-image: url("../images/bg4.JPG"); /* Couleur de remplacement pour le blanc */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover;
     z-index: -1; /* Place la couleur derrière l'image de fond */
 }
 
@@ -785,7 +790,7 @@ section.bienform:before {
 
 section.explanation_form{
     height: auto;
-    background-color: #af9d389a;
+    background-color: #ada36a;
 }
 
 img.explanation_form{
@@ -829,6 +834,7 @@ section.formulaire{
     overflow: hidden;
     height: 60vh;
     background-image: url("../images/form_bg.jpg");
+    background-attachment: fixed; /* Garde l'image fixe */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-position: center; /* Centre l'image */
     background-size: cover;
@@ -855,43 +861,6 @@ form.popupform{
 h1.form{
     color: rgb(0, 0, 0);
     text-decoration: underline;
-}
-
-
-section.confirmationbg{
-    background-image: url("../images/confirmation.jpg");
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center; /* Centre l'image */
-    background-size: cover;
-
-    height: 80vh;
-}
-
-form.confirmation{
-    margin-right: auto;
-    margin-left: auto;
-
-    width: 70vw;
-    height: auto;
-
-    padding: 2%;
-
-    background-color: rgba(255, 255, 255, 0.726);
-    border-radius: 15px 15px 15px 15px;
-}
-
-h1.confirmation{
-    font-weight: 600;
-    font-size: 1.5vw;
-}
-
-p.confirmation{
-    font-weight: 600;
-    font-size: 1.5vw;
-}
-
-body.confirmation{
-    background-color: grey;
 }
 
 /*

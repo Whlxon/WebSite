@@ -135,7 +135,7 @@ app.post("/save", async (req: Request, res: Response) => {
     try {
         await transporter.sendMail(mailOptions);
         await transporter.sendMail(mailToClient);
-        res.sendFile(path.resolve(__dirname, '../html_pages/Both/confirmation.html'));
+        res.sendFile(path.resolve(__dirname, '../html_pages/Both/formulaire.html'));
     } catch (error) {
         console.error("Erreur lors de l'envoi de l'email :", error);
         res.status(500).send("Échec de l'envoi de l'email.");

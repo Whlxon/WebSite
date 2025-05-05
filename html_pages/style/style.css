@@ -160,8 +160,9 @@ section.bienvenue:before {
     width: 100vw;
     height: 100%;
 
-    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
-    background-size: 120px;
+    background-image: url("../images/bg1.JPG"); 
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover;
 
     z-index: -1; /* Place la couleur derrière l'image de fond */
 }
@@ -210,7 +211,7 @@ table p.presentation{
 section.presentation{
     overflow: hidden;
     height: 50vw;
-    background-color: #af9d389a;
+    background-color: #afa982;
 }
 
 /*
@@ -253,7 +254,7 @@ table p.why{
 section.why{
     overflow: hidden;
     height: 50vw;
-    background-color: #1d98a157;
+    background-color: #7fa4a7;
 }
 
 /*
@@ -263,7 +264,7 @@ section.why{
 section.trouver{
     overflow: hidden;
     height: 50vw;
-    background-color: #a11d5b57;
+    background-color: #a5768c;
 }
 
 h1.trouver{
@@ -303,7 +304,7 @@ ul.trouver{
 section.interactif{
     overflow: hidden;
     height: 50vw;
-    background-color: #2ca11d57;
+    background-color: #92a890;
 }
 
 h1.interactif{
@@ -369,14 +370,23 @@ section.bienProjet{
 }
 
 section.bienProjet:before {
+    overflow: hidden;
+
     content: ""; /* Nécessaire pour la pseudo-classe */
-    position:fixed ;
+    position:fixed;
+
     top: 0;
     left: 0;
-    width: 100%;
+
+    width: 100vw;
     height: 100%;
-    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
-    background-size: 120px;
+
+    background-image: url("../images/bg2.JPG");
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: top;
+    background-attachment:scroll; /* Garde l'image fixe */
+    background-size: cover;
+
     z-index: -1; /* Place la couleur derrière l'image de fond */
 }
 
@@ -401,7 +411,7 @@ p.bienProjet{
 section.ticTacToe{
     overflow: hidden;
     height: 60vw;
-    background-color: #af9d389a;
+    background-color: #afa982;
 }
 
 img.ticTacToe{
@@ -443,7 +453,7 @@ h3.ticTacToe{
 section.enigme{
     overflow: hidden;
     height: 60vw;
-    background-color: #1d98a157;
+    background-color: #7fa4a7;
 }
 
 img.enigme{
@@ -490,7 +500,7 @@ h3.enigme{
 section.histoire{
     overflow: hidden;
     height: 60vw;
-    background-color: #a11d5b57;
+    background-color: #a5768c;
 }
 
 img.histoire{
@@ -534,7 +544,7 @@ h3.histoire{
 section.Bombe{
     overflow: hidden;
     height: 60vw;
-    background-color: #2ca11d57;
+    background-color: #92a890;
 }
 
 img.Bombe{
@@ -597,6 +607,7 @@ section.bienfact{
     background-repeat: no-repeat; /* Empêche la répétition de l'image */ 
     background-attachment: fixed; /* Garde l'image fixe */
     background-size: cover;
+
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -610,15 +621,25 @@ section.bienfact{
 
 section.bienfact:before {
     overflow: hidden;
+
     content: ""; /* Nécessaire pour la pseudo-classe */
-    position:fixed ;
+    position:fixed;
+
     top: 0;
     left: 0;
-    width: 100%;
+
+    width: 100vw;
     height: 100%;
-    background-color: #5757577c; /* Couleur de remplacement pour le blanc */
-    background-size: 120px;
-    z-index: -1; /* Place la couleur derrière l'image de fond */
+
+    background-image: url("../images/bg3.JPG");
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: top;
+    background-attachment:scroll; /* Garde l'image fixe */
+    background-size: cover;
+
+    
+    
+    z-index: -1; /* L'image reste derrière le texte */
 }
 
 h4.bienfact{
@@ -638,7 +659,7 @@ h4.bienfact{
 section.funfact{
     overflow: hidden;
     height: auto;
-    background-color: #1d98a157;
+    background-color: #7fa4a7;
     padding: 4%;
 }
 
@@ -697,7 +718,7 @@ div.funfact{
 
 section.explanation{
     height: auto;
-    background-color: #af9d389a;
+    background-color: #afa982;
 }
 
 img.explanation{
@@ -772,15 +793,19 @@ section.bienform{
 
 section.bienform:before {
     overflow: hidden;
+
     content: ""; /* Nécessaire pour la pseudo-classe */
     position:fixed ;
+
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
     background-image: url("../images/bg4.JPG"); /* Couleur de remplacement pour le blanc */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-size: cover;
+
     z-index: -1; /* Place la couleur derrière l'image de fond */
 }
 

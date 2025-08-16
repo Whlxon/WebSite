@@ -6,6 +6,7 @@
   	    <meta name="keywords" content="form, projects, request, requête, formulaire, projets">
   	    <meta name="author" content="Whixon">
 	    <title id="title">Make a Request Form</title>
+        <link rel="canonical" href="https://whixon.site/Both/formulaire.html" />
         <link rel="icon" href="../images/logo.png">
 	    <link rel="stylesheet" href="../style/style.css">
     </head>
@@ -13,25 +14,21 @@
 	
         <header id="header">
 
-            <table class="logoAndTitle">
-                <th class="spaced-cell">
-                    <th>
-                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
-                    </th>
-                    <th>
-                        <h2 class="begin">
-                            My Currents And Future Projects
-                        </h2>
-                    </th>
-                </th>
-            
-                <th class="spaced-cell">
-                    <th class="menu"><a href="../Eng/index.html">Home Page</a></th>
-                    <th class="menu"><a href="../Eng/myProjects.html">My Projects</a></th>
-		            <th class="menu"><a href="../funFact.html">FunFact</a></th>
-                    <th class="menu"><a href="../Both/formulaire.html">Make a Request</a></th>
-		        </th>
-            </table>
+            <!-- 2. Conteneur du menu -->
+            <div class="menu-container">
+
+                <!-- 2.2. Le menu -->
+                <nav class="main-menu">
+                <img class="logo" src="../images/logo.png" alt="">
+                <a href="../Eng/index.html">My webSite</a>
+                <a href="">|</a>
+                <a href="../Eng/index.html">Home</a>
+                <a href="../Eng/myProjects.html">Projects</a>
+                <a href="../Both/funFact.html">FunFact</a>
+                <a href="#contact">Contact</a>
+                
+                </nav>
+            </div>
 
             <script>
                 let lastScrollY = window.scrollY; // Dernière position de scroll
@@ -56,12 +53,7 @@
 
         <article>
 
-            <section class="bienform">
-                <br><br><br>
-                <h1 class="bienform">From<br>Formulaire</h1>
-            </section>
-
-            <section class="explanation_form">
+            <section class="glass">
                 <table>
                     <th>
                         <h1 class="explanation_form">Explanation / Explication</h1>
@@ -106,6 +98,8 @@
                 </table>
             </section>
 
+            <hr>
+
             <section class="formulaire">
                 <form class="popupform" action="/save" method="post">
                     <h1 class="form">Faire une demande <br> Make a Request</h1>
@@ -137,8 +131,9 @@
             </section>
         </article>
 
+        <hr>
 
-        <footer>
+        <footer class="glass" id="contact">
             <h2>
                 Contacte Me / Me Contacter:
             </h2>
@@ -159,7 +154,13 @@
                     <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
                 </th>
             </table>
-	    <p>cyril.houppertz@gmail.com</p>
+	    <p>cyril.houppertz@gmail.com <br>
+            ___________________________________</p>
+
+        
+            <p class="droitCopy">©2025 par Whixon alias Cyril Houppertz
+            <br> tout droit réserver
+            </p>
         </footer>
     </body>
 </html>

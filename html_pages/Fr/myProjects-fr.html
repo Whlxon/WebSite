@@ -3,42 +3,33 @@
     <head>
         <meta charset="gtf-8">
         <meta name="description" content="Tout les gros projets que j'ai fait">
- 	    <meta name="keywords" content="projets, python, jeux, programmation">
+ 	    <meta name="keywords" content="programmation, Learning, Projects, whixon, blog, projets, parcour, Python, projects, tkinter, pygame">
  	    <meta name="author" content="Whixon">
 	    <link rel="icon" href="../images/logo.png">
+        <link rel="canonical" href="https://whixon.site/Fr/myProjects-fr.html" />
 	    <link rel="stylesheet" href="../style/style.css">
     	<title>Mes Projets</title>
     </head>
     <body>
         <header id="header">
-            <table class="logoAndTitle">
-                <th class="spaced-cell">
-                    <th>
-                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
-                    </th>
-                    <th>
-                        <h2 class="begin">
-                            Mes Projets Actuels et Futurs
-                        </h2>
-                    </th>
-                </th>
+            <!-- 2. Conteneur du menu -->
+            <div class="menu-container">
+
+                <!-- 2.2. Le menu -->
+                <nav class="main-menu">
+                <img class="logo" src="../images/logo.png" alt="">
+                <a href="../Fr/index-fr.html">Mon Site</a>
+                <a href="">|</a>
+                <a href="../Fr/index-fr.html">Acceuil</a>
+                <a href="../Both/funFact.html">Annecdote</a>
+                <a href="#contact">Contact</a>
+                <a href="../Both/formulaire.html">form</a>
+                <a href="">|</a>
+                <a href="../Eng/myProjects.html">English</a>
+                <a href="../Fr/myProjects-fr.html">Français</a>
                 
-                <th class="spaced-cell">
-                    <th class="menu"><a href="./index-fr.html">Page d'acceuil</a></th>
-                    <th class="menu"><a href="./myProjects-fr.html">Mes Projets</a></th>
-                    <th class="menu"><a href="../funFact.html">Anecdotes</a></th>
-                    <th class="menu"><a href="../Both/formulaire.html">Faire une Demande</a></th>
-                    <th>
-                        <div class="language-dropdown">
-                            <div class="dropdown-button">Langue</div>
-                            <div class="dropdown-content">
-                                <a href="../Eng/myProjects.html">Anglais</a>
-                                <a href="./myProjects-fr.html">Français</a>
-                            </div>
-                        </div>
-                    </th>
-                </th>
-            </table>    
+                </nav>
+            </div>   
 
             <script>
                 let lastScrollY = window.scrollY; // Dernière position de scroll
@@ -62,24 +53,13 @@
         
         <article>
 
-            <section class="bienProjet">
-                <br><br><br>
-                <h1 class="bienProjet">Mes projets</h1>
-                <p class="bienProjet">
-                    Oui comme vous l'avez bien lu, vous pouvez voir ici tous les projets que j'ai réalisés,
-                <br>La plupart sont en Python (mon langage de programmation préféré ! 🤩).
-                <br>
-                <br>Pour vous expliquer, chaque projet est téléchargeable avec son titre, cliquez dessus et voyez ce qui se passe !
-                </p>
-            </section>
-
-            <section class="ticTacToe">
+            <section class="glass">
                 <table>
                     <th>
-                        <img class="ticTacToe" src="../images/oxo.PNG" alt="un screenshot montrant une fenêtre avec le jeux oxo ou tic tac toe">
+                        <img class="presentation" src="../images/oxo.PNG" alt="un screenshot montrant une fenêtre avec le jeux oxo ou tic tac toe">
                     </th>
                     <th>
-                        <h1 class="ticTacToe"><a href="">OXO ou Tic Tac Toe</a></h1>
+                        <h1 class="ticTacToe"><a href="https://whixon.itch.io/tic-tac-toe">OXO ou Tic Tac Toe</a></h1>
                         <h3 class="ticTacToe">
                             📜 Explications:
                         </h3>
@@ -126,7 +106,7 @@
                 </table>
             </section>
 
-            <section class="enigme">
+            <section class="glass">
                 <table>
                     <th>
                         <h1 class="enigme"><a href="https://whixon.itch.io/enigmatic-game">Enigmatic Game</a></h1>
@@ -173,7 +153,7 @@
                 </table>
             </section>
 
-            <section class="histoire">
+            <section class="glass">
                 <table>
                     <th>
                         <img class="histoire" src="../images/Write_Story.png" alt="a scrrenshot of a game">
@@ -223,10 +203,10 @@
                 </table>
             </section>
 
-            <section class="Bombe">
+            <section class="glass">
                 <table>
                     <th>
-                        <h1 class="Bombe"> Bomb Wars</h1>
+                        <h1 class="Bombe"><a href="https://whixon.itch.io/bomb-wars"> Bomb Wars</a></h1>
                         <br>
                         <h3 class="Bombe">
                             📜 Explications:
@@ -265,7 +245,7 @@
             
         </article>
 
-        <footer>
+        <footer class="glass" id="contact">
             <h2>
                 Me Contacter:
             </h2>
@@ -286,7 +266,13 @@
                     <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
                 </th>
             </table>
-	    <p>cyril.houppertz@gmail.com</p>
+            <p>cyril.houppertz@gmail.com <br>
+            ___________________________________</p>
+
+        
+            <p class="droitCopy">©2025 par Whixon alias Cyril Houppertz
+            <br> tout droit réserver
+            </p>
         </footer>
     </body>
 </html>

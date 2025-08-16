@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '../html_pages')));
 
 // Connexion à SQLite
 const dbPromise = open({
-    filename: 'E:/Server_projet/WebSite/db/projets_db.sqlite',
+    filename: '/root/monSite/db/projets_db.sqlite',
     driver: sqlite3.Database,
 });
 

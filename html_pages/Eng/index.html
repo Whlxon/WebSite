@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
 	    <meta name="google-site-verification" content="LfI3CPRwfdSPFdF4QRiVzpDWupezBKpOSC_UsLD0-VE" />
         <meta name="description" content="Presentation of my WebSite">
-  	    <meta name="keywords" content="Programmation, Learning, Projects">
+  	    <meta name="keywords" content="programmation, Learning, Projects, whixon, blog, projets, parcour, Python, projects, tkinter, pygame">
   	    <meta name="author" content="Whixon">
+        <link rel="canonical" href="https://whixon.site/Eng/index.html" />
 	    <link rel="icon" href="../images/logo.png">
 	    <link rel="stylesheet" href="../style/style.css">
         <title>Home Page</title>
@@ -13,34 +14,24 @@
     <body>
         <header id="header">
 
-            <table class="logoAndTitle">
-                <th class="spaced-cell">
-                    <th>
-                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
-                    </th>
-                    <th>
-                        <h2 class="begin">
-                            My Currents And Future Projects
-                        </h2>
-                    </th>
-                </th>
-            
-                <th class="spaced-cell">
-                    <th class="menu"><a href="../Eng/index.html">Home Page</a></th>
-                    <th class="menu"><a href="../Eng/myProjects.html">My Projects</a></th>
-		            <th class="menu"><a href="../funFact.html">Funfact</a></th>
-                    <th class="menu"><a href="../Both/formulaire.html">Make a Request</a></th>
-                    <th>
-                        <div class="language-dropdown">
-                            <div class="dropdown-button">Language</div>
-                            <div class="dropdown-content">
-                                <a href="../Eng/index.html">Anglais</a>
-                                <a href="../Fr/index-fr.html">Français</a>
-                            </div>
-                        </div>
-                    </th>
-		        </th>
-            </table>
+            <!-- 2. Conteneur du menu -->
+            <div class="menu-container">
+
+                <!-- 2.2. Le menu -->
+                <nav class="main-menu">
+                <img class="logo" src="../images/logo.png" alt="">
+                <a href="../Eng/index.html">My webSite</a>
+                <a href="">|</a>
+                <a href="../Eng/myProjects.html">Projects</a>
+                <a href="../Both/funFact.html">FunFact</a>
+                <a href="#contact">Contact</a>
+                <a href="../Both/formulaire.html">form</a>
+                <a href="">|</a>
+                <a href="../Eng/index.html">English</a>
+                <a href="../Fr/index-fr.html">Français</a>
+                
+                </nav>
+            </div>
 
             <script>
                 let lastScrollY = window.scrollY; // Dernière position de scroll
@@ -63,16 +54,7 @@
         </header>
         
         <article>
-            <section class="bienvenue">
-                <br><br><br>
-                <h1 class="bienvenue">Welcome</h1>
-                <h4 class="bienvenue">Hello and welcome to my WebSite,                     
-                <br> I'm glade to finally take all of my projects and finally show it in one place.
-                <br>
-                <br> This WebSite is one of a lot of project which I made.<h4>
-            </section>
-
-            <section class="presentation">
+            <section class="glass">
                 <table>
                     <th>
                         <img class="presentation" src="../images/moi.jpg" alt="sdqs">
@@ -94,7 +76,7 @@
                 </table>
             </section>
 
-	        <section class="why">
+	        <section class="glass">
                 <table>
                     <th>
                         <h1 class="why">Why this blog ?</h1>
@@ -106,15 +88,15 @@
                         </p>
                     </th>
                     <th>
-                        <img class="why" src="../images/sharing.jpg" alt="">
+                        <img class="presentation" src="../images/sharing.jpg" alt="">
                     </th>
                 </table>
             </section>
 
-	        <section class="trouver">
+	        <section class="glass">
                 <table>
                     <th>
-                        <img class="trouver" src="../images/trouver.jpg" alt="">
+                        <img class="presentation" src="../images/trouver.jpg" alt="">
                     </th>
                     <th>
                         <h1 class="trouver">What you will find here</h3>
@@ -129,11 +111,11 @@
                 </table>
             </section>
 
-	    <section class="interactif">
+	    <section class="glass">
                 <table>
                     <th>
                         <h1 class="interactif">Interactive Blog</h1>
-                        <p class="interaction">
+                        <p class="interactif">
                             This isn't just a place where I share my creations, it's also a share place. 
                         <br>If you have an idea, a question, or a suggestion, contact me !
                         <br>I like to take on challenges and create solutions that can really help ^^
@@ -144,14 +126,14 @@
                     </th>
                     
                     <th>
-                        <img class="interactif" src="../images/interactif.jpg" alt="">
+                        <img class="presentation" src="../images/interactif.jpg" alt="">
                     </th>
                 </table>
            </section>
             
         </article>
 
-        <footer>
+        <footer class="glass" id="contact">
 	     
             <h2>
                 Contact Me:
@@ -173,7 +155,13 @@
                     <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
                 </th>
             </table>
-	    <p>cyril.houppertz@gmail.com</p>
+	    <p>cyril.houppertz@gmail.com <br>
+            ___________________________________</p>
+
+        
+            <p class="droitCopy">©2025 par Whixon alias Cyril Houppertz
+            <br> tout droit réserver
+            </p>
         </footer>
         
     </body>

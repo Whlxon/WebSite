@@ -3,43 +3,45 @@
     <head>
         <meta charset="gtf-8">
         <meta name="description" content="All important projects which I made">
-        <meta name="keywords" content="Python, projects, tkinter, pygame">
-  	<meta name="author" content="whixon">
-	<link rel="icon" href="../images/logo.png">
-	<link rel="stylesheet" href="../style/style.css">
+        <meta name="keywords" content="programmation, Learning, Projects, whixon, blog, projets, parcour, Python, projects, tkinter, pygame">
+        <meta name="author" content="whixon">
+        <link rel="icon" href="../images/logo.png">
+        <link rel="canonical" href="https://whixon.site/Eng/myProjects.html" />
+        <link rel="stylesheet" href="../style/style.css">
         <title>My Project</title>
     </head>
     <body>
         <header id="header">
 
-            <table class="logoAndTitle">
-                <th class="spaced-cell">
-                    <th>
-                        <img class="logo" src="../images/logo.png" alt="Logo of the WebSite">
-                    </th>
-                    <th>
-                        <h2 class="begin">
-                            My Currents And Future Projects
-                        </h2>
-                    </th>
-                </th>
-            
-                <th class="spaced-cell">
-                    <th class="menu"><a href="../Eng/index.html">Home Page</a></th>
-                    <th class="menu"><a href="../Eng/myProjects.html">My Projects</a></th>
-		            <th class="menu"><a href="../funFact.html">FunFact</a></th>
-                    <th class="menu"><a href="../Both/formulaire.html">Make a Request</a></th>
-                    <th>
-                        <div class="language-dropdown">
-                            <div class="dropdown-button">Language</div>
-                            <div class="dropdown-content">
-                                <a href="./Eng/myProjects.html">English</a>
-                                <a href="../Fr/myProjects-fr.html">Français</a>
-                            </div>
-                        </div>
-                    </th>
-		        </th>
-            </table>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu avec goutte Liquid Glass</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 2. Conteneur du menu -->
+  <div class="menu-container">
+
+    <!-- 2.2. Le menu -->
+    <nav class="main-menu">
+      <img class="logo" src="../images/logo.png" alt="">
+      <a href="../Eng/index.html">My webSite</a>
+      <a href="">|</a>
+      <a href="../Eng/index.html">Home</a>
+      <a href="../Both/funFact.html">FunFact</a>
+      <a href="#contact">Contact</a>
+      <a href="../Both/formulaire.html">form</a>
+      <a href="">|</a>
+      <a href="../Eng/myProjects.html">English</a>
+      <a href="../Fr/myProjects-fr.html">Français</a>
+      
+    </nav>
+  </div>
+
+</html>
 
             <script>
                 let lastScrollY = window.scrollY; // Dernière position de scroll
@@ -47,7 +49,7 @@
                 window.addEventListener('scroll', () => {
                     const header = document.getElementById('header');
 
-                    if (window.scrollY > 60) {
+                    if (window.scrollY > 180) {
                         // L'utilisateur défile vers le bas
                         header.style.transform = 'translateY(-100%)'; // Cache le header
                     } else {
@@ -63,25 +65,15 @@
         
         <article>
 
-            <section class="bienProjet">
-                <br><br><br>
-                <h1 class="bienProjet">My projects</h1>
-                <p class="bienProjet">
-                    Yeah as you read, here you can see the whole projects what I did.
-                <br>The most of the projects are in python (My favorite programing language ! 🤩)
-                <br>
-                <br>To explain, each projects is downloadable with his title, just click on it and see what happend !
-                </p>
-            </section>
-
-            <section class="ticTacToe">
+            <section class="glass">
                 <table>
                     <th>
-                        <img class="ticTacToe" src="../images/oxo.PNG" alt="a screenshot showing a window with the game OXO or Tic Tac Toe">
+                        <img class="presentation" src="../images/oxo.PNG" alt="a screenshot showing a window with the game OXO or Tic Tac Toe">
                     </th>
                     <th>
                         <h1 class="ticTacToe"><a href="https://whixon.itch.io/tic-tac-toe">OXO or Tic Tac Toe</a></h1>
-                                                
+                        
+                        <div class="text">
                         <h3 class="ticTacToe">
                             📜 Explanations:
                         </h3>
@@ -124,14 +116,16 @@
                         <br>
                         <br>Tkinter and many other libraries are created by the community, meaning other contributors make it possible for people like me to develop such projects.
                         </p>
+                        </div>
                     </th>
                 </table>
             </section>
 
-            <section class="enigme">
+            <section class="glass">
                 <table>
                     <th>
                         <h1 class="enigme"><a href="https://whixon.itch.io/enigmatic-game">Enigmatic Game</a></h1>
+                        <div class="text">
                         <h3 class="enigme">
                             📜 Explanation:
                         </h3>
@@ -168,22 +162,23 @@
                         <br>A package is a part of script which is program by someone else and it's to not re write it again.
                         <br>For exemple here, with pygame which is the name of the used package, we can make some game with basic colisions, Graphic User Interface (GUI), etc..
                         </p>
+                        </div>
                     </th>
                     <th>
-                        <img class="enigme" src="../images/6PCXsU.jpg" alt="A screenshot of a game">
+                        <img class="presentation" src="../images/6PCXsU.jpg" alt="A screenshot of a game">
                     </th>
                 </table>
             </section>
 
-            <section class="histoire">
+            <section class="glass">
                 <table>
                     <th>
-                        <img class="histoire" src="../images/Write_Story.png" alt="a scrrenshot of a game">
+                        <img class="presentation" src="../images/Write_Story.png" alt="a scrrenshot of a game">
                     </th>
                     <th>
                         <h1 class="histoire"><a href="https://whixon.itch.io/writed-story">Writed Story</a></h1>
                         
-                        
+                        <div class="text">
                         <h3 class="histoire">
                             📜 Explanations:
                         </h3>
@@ -229,15 +224,17 @@
                         <br>So the query console is a essential tools for every developpers,
                         <br>Here in my case we're using the query console to show text and asking some Keyboard input to the user.
                         </p>
+                        </div>
                     </th>
                 </table>
             </section>
 
-            <section class="Bombe">
+            <section class="glass">
                 <table>
                     <th>
                         <h1 class="Bombe"><a href="https://whixon.itch.io/bomb-wars">Bomb Wars</a></h1>
                         <br>
+                        <div class="text">
                         <h3 class="Bombe">
                             📜 Explanations:
                         </h3>
@@ -265,16 +262,17 @@
                             So for this project I'm using Pygame which is a package as like I already explaned above to make simple game and interface.
                         <br>But I also use a package called Random that can manage random spawning of bombs.
                         </p>
+                        </div>
                     </th>
                     <th>
-                        <img class="Bombe" src="../images/Bomb_wars.PNG" alt="Screenshot showing a game window">
+                        <img class="presentation" src="../images/Bomb_wars.PNG" alt="Screenshot showing a game window">
                     </th>
                 </table>
             </section>
             
         </article>
 
-        <footer>
+        <footer class="glass" id="contact">
             </form>
 
             <h2>
@@ -297,7 +295,13 @@
                     <a class="link" href="https://www.facebook.com/cyril.houppertz">Facebook</a>
                 </th>
             </table>
-	    <p>cyril.houppertz@gmail.com</p>
+	    <p>cyril.houppertz@gmail.com <br>
+            ___________________________________</p>
+
+        
+            <p class="droitCopy">©2025 par Whixon alias Cyril Houppertz
+            <br> tout droit réserver
+            </p>
         </footer>
     </body>
 </html>

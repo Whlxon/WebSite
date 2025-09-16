@@ -788,27 +788,22 @@ button.submit {
 }
 
 /*
-* Change quand on survole le button
-*/
-button:hover {
-    background-color: #0056b3;
-}
-
-p.droitCopy{
-    font-size: small;
-    font-weight: 700;
-}
-
-
-/*
 * Change les bouttons avec la class submit
 */
 .submit{
-    background-color: #0056b3;
+    background: rgba(255, 255, 255, 0.295); /* Couche blanche/transparente */
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2); /* Ombre diffuse */
+    backdrop-filter: blur(5px); /* Effet de flou du fond */
+
+    /*background-color: #0056b3;*/
 }
 
 .submit:hover{
-   background-color: #0b68cc;
+    background: rgba(255, 255, 255, 0.2); /* Couche blanche/transparente */
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2); /* Ombre diffuse */
+    backdrop-filter: blur(6px); /* Effet de flou du fond */
+
+    /*background-color: #0b68cc;*/
 }
 
 a.link{
@@ -853,6 +848,3 @@ div.title{
 .title b, .description b, .language b {
     color: #333;
 }
-
-
-

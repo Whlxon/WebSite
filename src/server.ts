@@ -113,7 +113,7 @@ app.post("/save", async (req: Request, res: Response) => {
                <h3><u><strong>Description :</strong></u></h3>
                <div>${description}</div>
                <br>
-               <h3><u><strong>Langue de communication : ${language}</strong></u></h3>
+               <h3><u><strong>Langue de communication :</strong></u></h3>
                <div> ${language}</div>
                <br>
                <br>
@@ -128,7 +128,7 @@ app.post("/save", async (req: Request, res: Response) => {
                <h3><u><strong>Descriptions :</strong></u></h3>
                <div>${description}</div>
                <br>
-               <h3><u><strong>Communication Language : ${language}</strong></u></h3>
+               <h3><u><strong>Communication Language :</strong></u></h3>
                <div> ${language}</div>`,
     };
 
